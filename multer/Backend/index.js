@@ -17,7 +17,7 @@ const folderLocation = path.join(__dirname, './uploads');
 app.use(express.static(folderLocation));
 
 let corsOptions = {
-    origin: 'http://localhost:5173',
+    origin: 'http://localhost:5173, https://multerreact.netlify.app/',
     optionsSuccessStatus: 200,
     methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
     credentials: true
