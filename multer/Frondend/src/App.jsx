@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import axios from "axios";
 
-const api_url = "http://localhost:5000/Upload/Files";
-
+// const api_url = "http://localhost:5000/Upload/Files" ;
+const api_url = import.meta.env.VITE_API_URL;
+console.log(api_url);
 
 
 const App = () => {
